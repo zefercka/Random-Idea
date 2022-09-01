@@ -1,0 +1,322 @@
+html, body {
+    height: 100%;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    width: calc(100% - 2vw);
+    height: calc(100% - 2vw);
+    margin: 0;
+
+    border-style: groove;
+    border-color: rgb(48, 136, 26);
+    border-width: 1vw;
+    /* Рамка */
+
+    background-color: rgb(248, 238, 96);
+
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    /* Шрифт */
+
+    user-select: none;
+    /* Нельзя выделять */
+    filter: none;
+    /* отключение фильтров (размытие) */
+}
+
+nav {
+    width: 80%;
+    height: 6vh;
+    background-color: rgb(211, 211, 211);
+    
+    border-radius: 1vw;
+
+    margin: auto;
+    display: flex;
+    /* Метод отображения внутренних элементов */
+
+    justify-content: center;
+    /* Выравнивание элементов по центру */
+}
+
+nav button {
+    width: 30%;
+    height: 80%;
+    margin: auto;
+
+    border-style: solid;
+    border-radius: 1vw;
+    border-color: rgb(211, 211, 211);
+    /* Обводка */
+
+    background-color: rgb(211, 211, 211);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vw;
+    color: rgb(63, 63, 63);
+    /* Шрифт */
+
+    cursor: pointer;
+    /* При наведение - палец */
+}
+
+nav button:hover {
+    transition: .5s;
+    /* Плавность */
+    border-color: rgb(185, 185, 185);
+    /* Изменения цвета обводки */
+
+    font-size: 1.5vw;
+    /* Приближение текста */
+    color: black;
+    /* Цвет текста */
+}
+
+.name-company-logo {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Road Rage', cursive;
+    /* Шрифт */
+
+    cursor: pointer;
+    margin: 0;
+}   
+
+.name-company-logo a {
+    color: black;
+    text-decoration: none;
+    /* Чтобы лого, которое ссылка не подчёркивалось */
+}
+
+.about-us {
+    text-align: center;
+    /* Вырванивание текста по центру */
+}
+
+.container-main {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main { /* Окошко генератора идей */
+    width: 40%;
+    height: 50%;
+
+    background-color: rgb(46, 46, 46);
+
+    display: flex;
+    flex-direction: column;
+    /* Элемент в колонку */
+    justify-content: top;
+    align-items: center;
+    /* Выравнивание */
+
+    border-radius: 5vw;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.main select { 
+    /* Выбор темы */
+    width: 100%;
+    height: 25%;
+
+    margin-bottom: 10%;
+    font-size: 2vw;
+    padding: 0;
+
+    cursor: pointer;
+    /* Изменение курсора при наведении */
+}
+
+.main p {
+    /* Надпись "Генератор идей" */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: rgb(221, 221, 221);
+}
+
+.main .form {
+    /* Соединение элементов в генераторе идей в один */
+    margin-bottom: 8%;
+    width: 50%;
+    height: 100%;
+}
+
+.main button {
+    /* Кнопка создать идею */
+    width: 100%;
+    height: 25%;
+
+    border-radius: 2vw;
+    border-style: hidden;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+
+    cursor: pointer;
+}
+
+.main button:hover {
+    /* Наведение на кнопку */
+    background-color: rgb(146, 146, 146);
+    transition: .5s;
+}
+
+.instruction {
+    /* Окно инструкции */
+    width: 50%;
+    height: 70%;
+
+    position: fixed; 
+    top: 15%;
+    left: 25%;
+
+    visibility: hidden;
+
+    border-style: none;
+    border-radius: 2vw;
+
+    box-shadow: 10px 10px 9px 0px rgba(34, 60, 80, 0.22);
+
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+
+.instruction-btn {
+    /* Кнопка инструкции */
+    background-color: rgb(85, 85, 85);
+
+    color: rgb(160, 160, 160);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruction-btn:hover {
+    /* При наведении */
+    color: rgb(46, 46, 46);
+}
+
+.instruction b {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: blue;
+}
+
+.instruction h4 {
+    margin-bottom: 0;
+    font-size: 2vw;
+}
+
+.instruction li {
+    text-align: left;
+}
+
+/* О нас */
+.about-us-text {
+
+    width: 50%;
+    height: 30%;
+
+    margin: auto;
+    margin-top: 10%;
+
+    border-radius: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color:  rgb(85, 85, 85);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+}
+
+.contacts {
+    width: 40vw;
+    height: 5vw;
+    background-color:  rgb(85, 85, 85);
+
+    border-radius: 2vw;
+
+    margin: auto;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#icon {
+    width: 4vw;
+    height: 4vw;
+
+    border-radius: 50%;
+
+    background-color:  rgb(134, 134, 134);;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#icon img {
+    width: 80%;
+}
+
+#icon-a {
+    margin: auto;
+}
+
+#icon:hover {
+    transition: .5s;
+    background-color: rgb(85, 85, 85);   
+}
+
+#icon:hover img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* Как это работает */
+.container-how-work {
+    width: 40vw;
+    height: 10vw;
+
+    background-color:  rgb(85, 85, 85);
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 2vw;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.how-work-text {
+    color: rgb(253, 253, 253);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+
+    margin: auto;
+}

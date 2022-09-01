@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='generator.js') }}"></script>
+        <script src="{{ url_for('static', filename='mouse.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="name-company-logo">
+                <a href="/">RandomIdea.ru</a>
+            </h1>
+
+            <nav>
+                <button onclick="window.location.href = 'about-us'">О нас</button>
+                <button onclick="window.location.href = '/'">Главная</button>
+                <button onclick="window.location.href = 'how-work'">Как это работает</button>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+    </body>
+</html>
+
+<!-- Чтобы убрать повторяющиеся строки -->
+<!-- Верхнее -->
